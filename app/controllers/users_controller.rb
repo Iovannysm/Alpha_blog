@@ -24,7 +24,7 @@ class UsersController < ApplicationController
   end
   
   def edit 
-    
+   
   end
   
   def update
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
         flash[:success] = "Your acount was updated successfully"
         redirect_to articles_path
       else
-        render 'new'
+        render 'edit'
       end
   end
   
